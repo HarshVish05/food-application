@@ -1,0 +1,29 @@
+{
+
+    "posts":[
+         {
+             "id":"1",
+             "name":"Barbecue Nation",
+             "location":"Park Street",
+             "city":"kolkata"
+         },
+         {
+             "id":"2",
+             "name":"Bachan Dhaba",
+             "location":"Rash Behari",
+             "city":"kolkata"
+         },
+         {
+             "id":"3",
+             "name":"Byepass Dhaba",
+             "location":"EM Byepass",
+             "city":"kolkata"
+         },
+         {
+             "id":"4",
+             "name":"Jai Hind Dhaba",
+             "location":"Park Street",
+             "city":"kolkata"
+         }
+        ]   
+}
