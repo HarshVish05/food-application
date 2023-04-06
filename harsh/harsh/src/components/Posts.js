@@ -40,8 +40,8 @@ class Posts extends Component {
     const postItems = this.props.posts.map( post => (
         <div key={post.id}>
             <h3>{post.name}</h3>
-            <p>{post.city}</p>
             <p>{post.location}</p>
+            <p>{post.city}</p>
         </div>
     ));
     return (
