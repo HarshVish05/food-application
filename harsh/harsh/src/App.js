@@ -5,25 +5,41 @@ import { Provider, createStoreHook } from 'react-redux';
 
 import store from './store';
 import Posts from './components/Posts';
-import PostForm from './components/PostForm';
+
 import Navbar from './components/Navbar';
 import Search from './components/Search';
+import Menu from './components/Menu';
+import Food from './components/Food';
+import Post from './components/Post'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Cart from './components/Cart';
 
 
 
 
 function App() {
   return (
-    <Provider store= {store}>
-      <div className="App">
-      <Navbar/>
-      <Search/>
-        <PostForm/>
+    <BrowserRouter>
+      <Provider store={store}>
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/Search" element={<Search />} />
+            <Route path="/Post" element={<Post size={"25rem"} />} />
+            
+            <Route path="/food" element={<Food />} />
+            <Route path="/Cart" element={<Cart />} />
 
-        <Posts/>
-      
-      </div>
-    </Provider>
+
+            
+
+
+          </Routes>
+        </div>
+      </Provider>
+    </BrowserRouter>
   );
 }
 

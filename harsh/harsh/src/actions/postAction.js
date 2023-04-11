@@ -32,3 +32,5 @@ export const createPost = (postData) => dispatch => {
         }
     ));
 }
+
+export * as actionCreators from "./types";

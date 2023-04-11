@@ -7,7 +7,6 @@ const initialState = {
 };
 
 export default function(state = initialState, action) {
-
     switch(action.type) {
         case FETCH_POSTS:
             
@@ -21,7 +20,16 @@ export default function(state = initialState, action) {
                 ...state,
                 item: action.payload
             }
+        
         default:
          return state; 
     }
+
+    
 }
+
+
+
+/*
+
+    */

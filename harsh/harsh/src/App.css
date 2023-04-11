@@ -38,6 +38,12 @@
     transform: rotate(360deg);
   }
 }
+ .total{
+  /* padding-right: 0px; */
+  right: 0px;
+ }
+
+
 
 
 
